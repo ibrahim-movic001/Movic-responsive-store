@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin:0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.maquee{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    background-color: rgb(13, 34, 34);
+}
+.maquee h4{
+    color: white;
+}
+.huge{
+    padding: 10px;
+}
+
+/*background imge*/
+.background-image{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Image/Men/creative.png');
+    background-repeat: no-repeat;
+    background-position-x:top;
+    background-size: contain;
+    margin: 20px;
+    align-self: center;
+    width: 90%;
+    max-width: 89%;
+    height: 700px;
+}
+.background-image{
+    padding: 0;
+}
+
+
+/*styling head*/
+.logo{
+    font-size: 30px;
+    padding: 10px;
+    margin: 20px;
+    color: blue;
+}
+.logo:hover{
+    color: tomato;
+    font-size: 33px;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(66, 54, 54);
+}
+nav .toggle-list{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+nav .toggle-list li{
+    margin: 20px;
+}
+nav .toggle-list li a{
+    text-decoration: none;
+    color: white;
+}
+nav .toggle-list li a:hover{
+    color: white;
+    font-size: 22px;
+    background-color: tomato;
+}
+
+ /*header stop here*/
+
+    .Collection-view{
+        max-width: 95%;
+        margin: 50px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Collection-view .Women-wear {
+        margin-left: 40px;
+    }
+    .Collection-view .women{
+        margin-left: 80px;
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .Collection-view .men{
+        margin-left: 80px;
+        font-size: 20px;
+        font-weight: 550;
+    }
+
+
+    /*styling the women template*/
+
+    .women-shoe-template{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 40px;
+    }
+    #best-seller{
+        font-size: 35px;
+        padding: 30px;
+        text-align: center;
+        font-style: italic;
+    }
+    .women-shoe-template .sec1,.sec2,.sec3,.sec4,.sec5,.sec6,.sec7,.sec8,.sec9,.sec10,.sec11{
+        border: 1px solid rgb(204, 192, 192);
+    }
+    .women-shoe-template p, .sec1,.sec2,.sec3,.sec4,.sec5,.sec6,.sec7,.sec8,.sec9,.sec10,.sec11{
+        text-align: center;
+        padding: 10px;
+        color: rgb(87, 81, 81);
+    }
+    .women-shoe-template .butn{
+        padding: 7px;
+        background-color: rgb(66, 54, 54);
+        border-radius: 10px;
+    }
+    .women-shoe-template .butn a{
+        color: white;
+        text-decoration: none;
+    } 
+    .women-shoe-template .butn a:hover{
+        color: tomato;
+    }
+
+
+
+
+
+
+/* styling footer*/
+.footer-cotainer{
+    display:flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    overflow-wrap: break-word;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+footer{
+    background-color: rgb(13, 34, 34);
+}
+.my-account{
+    margin: 10px;
+    margin-left: 50px;
+    color: white;
+}
+.my-account li{
+    padding: 5px;
+    margin-top: 20px;
+}
+.my-account ul{
+    list-style: none;
+}
+.my-account ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.my-account ul li a:hover{
+    color: tomato;
+    border-bottom: 1px solid white;
+}
+
+.subscribe{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 90px;
+    padding: 10px;
+    color: white;
+}
+.subscribe .sub{
+    padding: 10px;
+    margin-top: 20px;
+    color:rgb(236, 222, 222);;
+}
+.address{
+    padding: 10px;
+    color: white;
+    margin-left: 110px;
+}
+.address h3{
+    padding: 10px;
+    color: white;
+    line-height: 10px;
+    margin-top: 10px;
+}
+.address .sub a{
+    text-decoration: none;
+    color:rgb(236, 222, 222);
+}
+.address .sub{
+    padding: 10px;
+    line-height: 10px;
+    font-size: 18px;
+    color: rgb(236, 222, 222);
+}
+
+/*styling the trending start here*/
+.trending-imgage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.trending-imgage a{
+    text-decoration: none;
+}
+.trending-imgage p{
+    font-size: 19px;
+    padding: 5px;
+    margin: 4px;
+    color: rgb(82, 71, 71);
+}
+.trending-h{
+    font-size: 28px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+/*styling the mobile*/
+@media screen and (max-width:650px) {
+    nav .toggle-list{
+        display: none;
+    }
+    .toggle-icon{
+        display: block;
+        color: white;
+    }
+    #menu-toggle:checked ~ .toggle-list{
+        display: block;
+    }
+    .footer-cotainer{
+        display: block;
+    }
+    .my-account, .subscribe, .address{
+        display: block;
+    }
+    .Collection-view{
+        max-width: 95%;
+        margin:10px;
+        display: block;
+    }
+    .Collection-view img{
+        width: 400px;
+        margin:0;
+        display: block;
+    }
+
+}
+
+/*removing the checkbox*/
+#menu-toggle{
+    display: none;
+}
+.toggle-icon{
+        margin-top: 30px;
+        color: white;
+        display: block;
+    }
+

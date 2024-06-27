@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+*{
+    padding: 0;
+    margin:0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    box-sizing: border-box;
+
+}
+
+/* first call start here */
+.submit-request{
+    height:auto; 
+    padding: 15px;
+    width:auto;
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgb(61, 61, 202);
+}
+.submit-request a{
+    text-decoration: none;
+    color: white;
+}
+.submit-request a:hover{
+    color: white;
+    border-bottom: 1px solid black;
+}
+.submit-request{
+    margin-left: 50px;
+    background-color: rgb(22, 22, 54);
+}
+/* first call ends here */
+
+/* second call start here*/
+
+.speak-with-us{
+    background-color: rgb(115, 115, 212);
+    height: 190px;
+    margin: 40px;
+    width: 400px;
+    border-radius: 10px;
+}
+.speak-container{
+    margin: 30px;
+    margin-left: 60px;
+    color: white;
+}
+.submit-request1{
+    height:auto; 
+    padding: 15px;
+    width:auto;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 10px;
+    border: 1px solid rgb(221, 214, 214);
+    cursor: pointer;
+    background-color: rgb(22, 22, 54);
+    margin-left: 80px;
+}
+.submit-request1 a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+
+}
+/* second call end here*/
+
+
+/* form stylling start here*/
+
+form input, .company-name, textarea{
+    height:auto; 
+    padding: 10px;
+    width:auto;
+    max-width: 100%;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(230, 208, 208);
+}
+#Contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 30px;
+    background-color: rgb(143, 143, 214);
+}
+.input-container{
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgb(243, 243, 245);
+}
+/* form stylling ends here*/
+
+/* headquarters start here*/
+.head-quaters{
+    display: block;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 10px;
+    background-color: rgb(206, 193, 193);
+    width:500px;
+    height: 250px;
+}
+.head-quaters .quarters {
+    font-style: italic;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.head-quaters .quarters a{
+    text-decoration: none;
+    color: rgb(22, 22, 22);
+}
+.head-quaters .quarters a:hover{
+    border-bottom: 1px solid blue;
+}
+.head-quaters-container{
+ margin-left: 33px;
+ font-size: 25px;
+ font-style: normal;
+}
+
+/*location start here*/
+.location{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 140px;
+    column-gap: 40px;
+    max-width: auto;
+    padding: 20px;
+}
+.location h4{
+    margin-left: 30px;
+}
+.location p{
+    font-size: 17px;
+    font-style: italic;
+    padding:0;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.location p a{
+    text-decoration: none;
+}
+.location p a:hover{
+    border-bottom:1px solid black;
+}
+
+.abuja-NG img{
+    border-radius: 80px;
+}
+.lagos-NG img{
+    border-radius: 80px;
+}
+.edo-State img{
+    border-radius: 80px;
+}
+
+
+/*logo stylling start here*/
+
+.logo{
+    font-size:30px;
+    padding: 10px;
+    margin: 20px;
+    color: blue;
+}
+.logo:hover{
+    color: tomato;
+    font-size: 33px;
+}
+/*logo stylling ends here*/
+nav{
+    display: flex;
+    background-color: rgb(66, 54, 54);
+}
+nav .toggle-list{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+nav .toggle-list li{
+    margin: 20px;
+}
+nav .toggle-list li a{
+    text-decoration: none;
+    color: white;
+}
+nav .toggle-list li a:hover{
+    color: white;
+    font-size: 22px;
+    background-color: tomato;
+}
+.toggle-icon{
+    color: rgb(66, 54, 54);
+}
+
+
+        .footer-cotainer{
+    display:flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+    overflow-wrap: break-word;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+}
+footer{
+    background-color: rgb(13, 34, 34);
+}
+.my-account{
+    margin: 10px;
+    margin-left: 50px;
+    color: white;
+}
+.my-account li{
+    padding: 5px;
+    margin-top: 20px;
+}
+.my-account ul{
+    list-style: none;
+}
+.my-account ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.my-account ul li a:hover{
+    color: tomato;
+    border-bottom: 1px solid white;
+}
+
+.subscribe{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 90px;
+    padding: 10px;
+    color: white;
+}
+.subscribe .sub{
+    padding: 10px;
+    margin-top: 20px;
+    color:rgb(236, 222, 222);
+}
+.address{
+    padding: 10px;
+    color: white;
+    margin-left: 110px;
+}
+.address h3{
+    padding: 10px;
+    color: white;
+    line-height: 10px;
+    margin-top: 10px;
+}
+.address .sub a{
+    text-decoration: none;
+    color:rgb(236, 222, 222);
+}
+.address .sub{
+    padding: 10px;
+    line-height: 10px;
+    font-size: 18px;
+    color: rgb(236, 222, 222);
+}
+#menu-toggle{
+    display: none;
+}
+
+
+/*styling the mobile*/
+@media screen and (max-width:650px) {
+    nav .toggle-list{
+        display: none;
+    }
+    .toggle-icon{
+        display: block;
+    }
+    #menu-toggle:checked ~ .toggle-list{
+        display: block;
+    }
+    .footer-cotainer{
+        display: block;
+    }
+    .my-account, .subscribe, .address{
+        display: block;
+        line-height: 10px;
+    }
+    .address .sub{
+    padding: 0;
+    line-height: 25px;
+    }
+    .address h3{
+    line-height: 20px;
+    }
+    .subscribe .sub{
+    line-height: 25px;
+    }
+    #Contact-container{
+    display: block;
+    margin: 0px;
+    }
+    .speak-with-us{
+    height: 190px;
+    margin:0;
+    padding:0;
+    margin-top: 2px;
+    width: 320px;
+    max-width: 322px;
+
+    }
+    .head-quaters{
+    display: block;
+    padding:10px;
+    margin:10px;
+    width:340px;
+    height: 350px;
+    }
+
+    .company-name{
+    color: rgb(104, 98, 98);
+    }
+    .location{
+    display:block;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    }
+/*removing the checkbox*/
+#menu-toggle{
+    display: none;
+}
+.toggle-icon{
+        margin-top: 30px;
+        color: white;
+        display: block;
+    }
+}
+
+
+    </style>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movc !Store</title>
+        </head>
+        <body>
+            <nav>
+                <div class="logo">
+                    Movic !Store
+                </div>
+                <label for="menu-toggle" class="toggle-icon">ONclick</label>
+                <input type="checkbox" id="menu-toggle">
+                <ul class="toggle-list">
+                    <li><a href="file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Index.html#">Home</a></li>
+                    <li><a href="file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Index.html#best-mens-shop">Men</a></li>
+                    <li><a href="file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Index.html#best-seller">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div id="Contact-container">
+                <div class="input-container">
+                    <form>
+                        <input type="text" id="First name" type="name" placeholder="First Name" required>
+                    <input type="text" id="last name" type="name" placeholder="Last Name" required>
+                    <input type="mail" id="mail" type="mail" placeholder="Email">
+                    <input type="number" id="phone number" type="contact" placeholder="Phone Number" required>
+                    <input type="text" id="company name" type="name" placeholder="Company Name" required>
+                    <select class="company-name"required>
+                        <option value="Industry">INDUSTRY*</option>
+                        <option value="legal">Legal*</option>
+                        <option value="Construction And Home Improvement">Construction And Home Improvement*</option>
+                        <option value="Ecommerce">Ecommerce*</option>
+                        <option value="Small Business">Small Business*</option>
+                        <option value="Maufacturing">Maufacturing*</option>
+                        <option value="Senior Living facilities">Senior Living facilities*</option>
+                        <option value="Real Estate">Real Estate*</option>
+                        <option value="Others">Others*</option>
+                    </select>
+                    <br>
+                    <select class="company-name" required>
+                        <option value="assist">What can we help you with?*</option>
+                        <option value="request">Need more visitors, leads and/or sales*</option>
+                        <option value="creation">Need to create branding*</option>
+                        <option value="Ecommerce">Ecommerce*</option>
+                        <option value="Small Business">Seeking partnership or Employment*</option>
+                        <option value="Others">Others*</option>
+                    </select>
+                    <br>
+                    <textarea placeholder="please tell us more"></textarea>
+                    <br>
+                    <button class="submit-request" ><a href="#">Submit Your Request</a></button>
+
+                    </form>
+                </div>
+                <div class="speak-with-us">
+                    <h2 class="speak-container" >Prefer to speak with a <br> marketing expert instead?</h2>
+                    <button class="submit-request1" ><a href="tel:+2349054771025">(234) 90 5477 1025</a></button>
+                </div>
+            </div>
+            <div class="head-quaters">
+                <p class="head-quaters-container"><b>Movic !store headquaters</b></p>
+                <p class="quarters">Comrade Digital Marketing Agency</p>
+                <p class="quarters"><b>Address:</b> 770 N Halsted St, Ste 106, Chicago, IL 60642</p>
+                <p class="quarters"><b>Hours:</b> Monday-Friday: 9am-5pm</p>
+                <p class="quarters"><b>Phone:</b><a href="tel:+2349054771025"> (234) 90 5477 1025</a></p>
+                <p class="quarters"><b>Email:</b><a href="mail: ibrahimabdulkerim001@gmail.com"> ibrahimabdulkerim001@gmail.com</a></p>
+            </div>
+
+            <div class="location">
+                <div class="abuja-NG">
+                    <img src="file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Image/Men/DSC_9332.JPG" width="300">
+                    <h4>Abuja, NG</h4>
+                    <p><a href="#"> Abuja Marketing digital Agency</a></p>
+                    <p><a href="#"> ABJ SEO Agency</a></p>
+                </div>
+                <div class="lagos-NG">
+                    <img src="file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Image/Men/DSC_9326.JPG" width="300">
+                    <h4>Lagos, NG</h4>
+                    <p><a href="#"> Lagos Marketing Digital  Agency</a></p>
+                    <p><a href="#"> LA SEO Agency</a></p>
+                </div>
+                <div class="edo-State">
+                    <img src="file:///C:/Users/THE%20LEARNING%20HUB%20PC1/Desktop/Movic%20Store/Image/Men/DSC_9331.JPG" width="300">
+                    <h4>EDO, NG</h4>
+                    <p><a href="#"> Edo Marketing Digital  Agency</p>
+                    <p><a href="#">ED SEO Agency</a></a></p>
+                </div>
+            </div>
+          
+            <footer>
+                <div class="footer-cotainer">
+                    <div class="my-account">MY ACCOUNT
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Privacy yuPolicy</a> </li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="address">ADDRESS:
+                        <p class="sub">NO 4 JOS ROAD ABAHA ROAD NASARAWA </p>
+                        <h3>PHONE:</h3>
+                        <p class="sub">Toll Free <a href="tel:07049608938">(+234)70-4960-8938</a> </p>
+                        <h3>EMAIL:</h3>
+                        <p class="sub"><a href="#">ibrahimabdulkerim001@gmail.com</a></p>
+                        <h3>WORKING DAYS/HOURS:</h3>
+                        <p class="sub">Mon - Sun / 9:00AM - 8:00PM</p>
+                    </div>
+                    <div class="subscribe">
+                        <p class="sub">Get all the latest information on Events, Sales and Offers. Sign up for newsletter today</p>
+                        <p class="sub">Email address:</p>
+                    </div>
+                    
+                </div>
+            </footer>    
+        </body>
+        </html>
